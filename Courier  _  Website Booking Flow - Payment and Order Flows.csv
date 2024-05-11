@@ -1,0 +1,131 @@
+Title,Preconditions,Steps,Test data,Expected Result,Platform,Priority,References,tags
+Payment Screen | Verify whether user is successfully able to complete the Payment,"1.Login should be successful
+","1.Click on the Website URL
+2.Check the quote in 'Courier Lead Form'
+3.Click on 'Book Now' CTA
+4.Enter valid data in all the mandatory fields in Pickup and Drop details Screen
+5.Click on 'Confirm' CTA
+6.Select 'Package Type'
+7.Enter valid data in 'Package Screen' -> Click on 'Proceed' CTA
+8.Select available 'Quotations' in 'Estimate Screen' -> Click on 'Proceed' CTA
+9.Click on 'Proceed to Pay CTA
+10.Complete the Payment
+11.Verify whether user is successfully able to complete the Payment","1.Website URL: https://porter.in/
+2.Mobile Number: 94xxxxxxxx
+3.Pickup Location: 'Porter Head office, Bannerghatta Main Road'
+4.Drop Location: 'Neo Hospital, Electronic City'
+5.Enter package weight: 0.01kg and 10 gm
+6.L=25, W=25, H=15 (cm/inch)
+7.Enter package value: ₹ 100
+8.Coupon Code: FIRSTCODE
+","
+1.User should be successfully able to complete the Payment","android,
+ ios",High,COURIER-815,regression
+Payment Screen | Verify whether successfully order placed message is displaying after completion of payment,"1.Login should be successful
+","1.Click on the Website URL
+2.Check the quote in 'Courier Lead Form'
+3.Click on 'Book Now' CTA
+4.Enter valid data in all the mandatory fields in Pickup and Drop details Screen
+5.Click on 'Confirm' CTA
+6.Select 'Package Type'
+7.Enter valid data in 'Package Screen' -> Click on 'Proceed' CTA
+8.Select available 'Quotations' in 'Estimate Screen' -> Click on 'Proceed' CTA
+9.Click on 'Proceed to Pay CTA
+10.Complete the Payment
+11.Verify whether successfully order placed message is displaying after completion of payment","1.Website URL: https://porter.in/
+2.Mobile Number: 94xxxxxxxx
+3.Pickup Location: 'Porter Head office, Bannerghatta Main Road'
+4.Drop Location: 'Neo Hospital, Electronic City'
+5.Enter package weight: 0.01kg and 10 gm
+6.L=25, W=25, H=15 (cm/inch)
+7.Enter package value: ₹ 100
+8.Coupon Code: FIRSTCODE
+","
+1.Successfully order placed message should be displaying after completion of payment
+2.Message should be displayed as 'Order placed successfully' along with icon","android,
+ ios",High,COURIER-815,regression
+Prefilling | Verify whether Order Details are not prefilling in website,"1.Login should be successful
+","1.Click on the Website URL
+2.Check the quote in 'Courier Lead Form'
+3.Click on 'Book Now' CTA
+4.Enter valid data in all the mandatory fields in Pickup and Drop details Screen
+5.Click on 'Confirm' CTA
+6.Select 'Package Type'
+7.Enter valid data in 'Package Screen' -> Click on 'Proceed' CTA
+8.Select available 'Quotations' in 'Estimate Screen' -> Click on 'Proceed' CTA
+9.Kill the webview
+10.Click on the Website URL
+11.Verify whether Order Details are not prefilling","1.Website URL: https://porter.in/
+2.Mobile Number: 94xxxxxxxx
+3.Pickup Location: 'Porter Head office, Bannerghatta Main Road'
+4.Drop Location: 'Neo Hospital, Electronic City'
+5.Enter package weight: 0.01kg and 10 gm
+6.L=25, W=25, H=15 (cm/inch)
+7.Enter package value: ₹ 100
+","
+1.Order Details should not be prefilled","android,
+ ios",High,COURIER-815,regression
+Prefilling | Verify whether Order Details are prefilling in App if the user records details in Website,"1.Customer App should be installed
+2.Login should be successful","1.Click on the Website URL
+2.Check the quote in 'Courier Lead Form'
+3.Click on 'Book Now' CTA
+4.Enter valid data in all the mandatory fields in Pickup and Drop details Screen
+5.Click on 'Confirm' CTA
+6.Select 'Package Type'
+7.Enter valid data in 'Package Screen' -> Click on 'Proceed' CTA
+8.Select available 'Quotations' in 'Estimate Screen' -> Click on 'Proceed' CTA
+9.Kill the webview
+10.Land on the 'Home Screen' of 'Customer App'
+11.Click on 'All India Parcel' section
+12.Click on 'Book Now' CTA in 'Landing Screen' 
+13.Verify whether Order Details are prefilling in App if the user records details in website","1.Website URL: https://porter.in/
+2.Mobile Number: 94xxxxxxxx
+3.Pickup Location: 'Porter Head office, Bannerghatta Main Road'
+4.Drop Location: 'Neo Hospital, Electronic City'
+5.Enter package weight: 0.01kg and 10 gm
+6.L=25, W=25, H=15 (cm/inch)
+7.Enter package value: ₹ 100
+","
+1.Order Details should be prefilled in App if the user records details in website","android,
+ ios",High,COURIER-815,regression
+Prefilling | Verify whether Order Details are not prefilling in Website if the user records details in App,"1.Customer App should be installed
+2.Login should be successful","1.Land on the 'Home Screen' of 'Customer App'
+2.Click on 'All India Parcel' section
+3.Click on 'Book Now' CTA in 'Landing Screen'
+4.Enter valid data in 'Address Screen' -> Click on 'Proceed' CTA
+5.Enter valid data in 'Package Screen' -> Click on 'Proceed' CTA
+6.Select available 'Quotations' in 'Estimate Screen' -> Click on 'Proceed' CTA
+7.Kill the App
+8.Click on the Website URL
+9.Verify whether Order Details are not prefilling in Website if the user records details in App
+
+
+","1.Mobile Number: 94xxxxxxxx
+2.Pickup Location: 'Porter Head office, Bannerghatta Main Road'
+3.Drop Location: 'Neo Hospital, Electronic City'
+4.Enter package weight: 0.01kg and 10 gm
+5.L=25, W=25, H=15 (cm/inch)
+6.Enter package value: ₹ 100
+7.Website URL: https://porter.in/
+
+","
+1.Order Details should not be prefilling in Website if the user records details in App
+
+","android,
+ ios",High,COURIER-815,regression
+Orders Screen | Verify whether successfully placed orders in website is displaying in Orders Screen in Application,"1.Customer App should be installed
+2.Login should be successful
+3.Order should be placed in website
+","1.Land on the 'Home Screen' of 'Customer App'
+2.Navigate to 'Orders' Screen
+3.Verify whether successfully placed orders in website is displaying in Orders Screen in Application","1.Website URL: https://porter.in/
+2.Mobile Number: 94xxxxxxxx
+3.Pickup Location: 'Porter Head office, Bannerghatta Main Road'
+4.Drop Location: 'Neo Hospital, Electronic City'
+5.Enter package weight: 0.01kg and 10 gm
+6.L=25, W=25, H=15 (cm/inch)
+7.Enter package value: ₹ 100
+8.Coupon Code: FIRSTCODE
+","
+1. Successfully  placed orders in website should be displaying in Orders Screen in Application","android,
+ ios",High,COURIER-815,regression
